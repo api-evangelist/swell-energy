@@ -1,8 +1,24 @@
 aid: swell-energy
+accessModel:
+  pricing: unknown
+  onboarding: unknown
+  trial: false
+  try_now: false
+  public: false
+  label: Unknown
+  confidence: low
+  source: []
+  generated: '2026-07-22'
+  method: derived
+image: https://kinlane-images.s3.amazonaws.com/shared/apis-json/icons/swell-energy.png
 name: Swell Energy
-description: 'Swell Energy is a company surfaced as a portfolio company of softbank-vision-fund and added
-  to the API Evangelist network as a stub for enrichment. Sector: frontier-tech. This profile is a lead
-  awaiting the enrichment pipeline.'
+description: 'Swell Energy is a residential clean-energy company that designs, finances, installs, and
+  operates home solar, battery storage, and virtual power plant (VPP) systems for homeowners, businesses,
+  and utilities. Its Swell Compass platform connects to home energy devices to monitor, report, and optimize
+  energy use, and coordinates aggregated distributed batteries into grid services (GridRevenue programs)
+  in partnership with utilities. Backed by SoftBank Vision Fund, the company operates a consumer web and
+  mobile experience (Compass) rather than a public developer API; no developer portal, OpenAPI, SDKs, or
+  documented public API surface was found during enrichment.'
 url: https://raw.githubusercontent.com/api-evangelist/swell-energy/refs/heads/main/apis.yml
 x-type: company
 x-source: vc-portfolio
@@ -12,13 +28,39 @@ x-tier: stub
 x-tier-reason: portfolio-lead
 specificationVersion: '0.20'
 created: '2026-07-17'
-modified: '2026-07-17'
+modified: '2026-07-21'
 tags:
 - Company
 - Frontier Tech
+- Energy
+- Solar
+- Battery Storage
+- Virtual Power Plant
+- Clean Energy
+- Home Energy
 apis: []
+common:
+- type: DomainSecurity
+  url: security/swell-energy-domain-security.yml
+- type: Website
+  url: https://www.swellenergy.com
+- type: Blog
+  url: https://www.swellenergy.com/blog
+- type: PrivacyPolicy
+  url: https://www.swellenergy.com/privacy-policy
+- type: Support
+  url: https://www.swellenergy.com/faq
+- type: Login
+  url: https://compass.swellenergy.com/
+- type: Partners
+  url: https://www.swellenergy.com/partners
 maintainers:
 - FN: Kin Lane
   email: kin@apievangelist.com
 - FN: APIs.json
   email: info@apis.io
+x-enrichment:
+  date: '2026-07-21'
+  status: minimal
+  artifacts_added: 1
+  pass: local-v1
